@@ -5,8 +5,8 @@
       "#Karin": [
         "index.js"
       ],
-      "#template": [
-        "template.js"
+      "#markdown": [
+        "markdown.js"
       ]
     }
   },

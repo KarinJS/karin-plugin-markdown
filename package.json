@@ -1,12 +1,15 @@
 {
-  "name": "karin-plugin-template",
+  "name": "karin-plugin-markdown",
   "version": "1.0.0",
   "author": "Lain",
   "type": "module",
   "dependencies": {
+    "marked": "12.0.2",
+    "highlight.js": "11.9.0",
+    "github-markdown-css": "5.5.1"
   },
   "imports": {
     "#Karin": "./lib/imports/index.js",
-    "#template": "./lib/imports/template.js"
+    "#markdown": "./lib/imports/markdown.js"
   }
 }
