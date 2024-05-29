@@ -1,6 +1,6 @@
 import fs from 'fs'
-import { basename, Common } from '#markdown'
 import { plugin, segment } from '#Karin'
+import { basename, Common, Config } from '#markdown'
 
 export class Markdown extends plugin {
   constructor () {
@@ -10,7 +10,7 @@ export class Markdown extends plugin {
         {
           reg: '^(#)?(markdown|md)',
           fnc: 'start',
-          permission: 'master'
+          permission: Config.Config.permission
         }
       ]
     })
@@ -45,7 +45,7 @@ export class Markdown extends plugin {
   }
 
   async start () {
-    const text = this.e.msg.replace(/^(markdown|md)/, '').trim()
+    const text = this.e.msg.replace(/^(#)?(markdown|md)/, '').trim()
     if (!text) return this.reply('请输入内容~', { at: true })
     const image = await Common.markdown(text)
     return this.reply(segment.image(image))

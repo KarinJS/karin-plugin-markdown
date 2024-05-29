@@ -1,3 +1,6 @@
+# 权限配置 "master" | "admin" | "group.owner" | "group.admin" | "all"
+permission: master
+
 # 主题样式 0跟随系统 1白天 2黑夜
 theme: 0
 
