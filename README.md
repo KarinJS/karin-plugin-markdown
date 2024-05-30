@@ -6,7 +6,7 @@
 
 ## 克隆仓库
 
-karin根目录执行以下命令克隆仓库到本地
+karin 根目录执行以下命令克隆仓库到本地
 
 ```bash
 git clone https://github.com/karinjs/karin-plugin-markdown.git ./plugins/karin-plugin-markdown
@@ -45,7 +45,7 @@ pnpm install --filter=karin-plugin-markdown
 | 是否长按  | bool   |
 
 <details>
- <summary>点击查看安可私房照</summary>
+ <summary>安可私房照</summary>
 </details>
 
 </div>
@@ -74,16 +74,15 @@ pnpm install --filter=karin-plugin-markdown
 
 当然支持导出使用啦~
 
-举例: 在`karin-plugin-example`中随便新建一个js文件
+举例: 在`karin-plugin-example`中随便新建一个 js 文件
 
 ```js
-import fs from 'fs'
-import markdown from '../karin-plugin-markdown/index.js'
+import fs from "fs";
+import markdown from "../karin-plugin-markdown/index.js";
 
-const image = await markdown('# Hello, world!')
+const image = await markdown("# Hello, world!");
 // 保存到本地 base64
-fs.writeFileSync('./image.jpeg', image.replace('base64://', ''), 'base64')
-
+fs.writeFileSync("./image.jpeg", image.replace("base64://", ""), "base64");
 ```
 
 你会在根目录看到一个`image.jpeg`文件~
@@ -91,17 +90,39 @@ fs.writeFileSync('./image.jpeg', image.replace('base64://', ''), 'base64')
 ### 更多参数
 
 ```js
-import fs from 'fs'
-import markdown from '../karin-plugin-markdown/index.js'
+import fs from "fs";
+import markdown from "../karin-plugin-markdown/index.js";
 
-const image = await markdown('# Hello, world!', {
+const image = await markdown("# Hello, world!", {
   theme: 2, // 主题设置 0跟随系统 1白天 2黑夜
-  waitUntil: 'networkidle0', // "networkidle0" | "load" | "domcontentloaded" | "networkidle2"
-  deviceScaleFactor: 10 // 像素比 越大越清晰 渲染速度越慢
-})
+  waitUntil: "networkidle0", // "networkidle0" | "load" | "domcontentloaded" | "networkidle2"
+  deviceScaleFactor: 10, // 像素比 越大越清晰 渲染速度越慢
+});
 // 保存到本地 base64
-fs.writeFileSync('./image.jpeg', image.replace('base64://', ''), 'base64')
-
+fs.writeFileSync("./image.jpeg", image.replace("base64://", ""), "base64");
 ```
 
+## 资源来源
+
+- `highlight.min.js`:
+  - [原始源][highlight.min.js]
+  - [GitHub][Github-highlight.min.js]
+- `github.min.css`:
+  - [原始源][github.min.css]
+  - [GitHub][Github-highlight.min.js]
+- `katex.min.css`:
+  - [原始源][katex.min.css]
+  - [GitHub][Github-katex.min.css]
+- `tex-mml-chtml.js`:
+  - [原始源][tex-mml-chtml.js]
+  - [GitHub][Github-tex-mml-chtml.js]
+
 [效果展示]: https://gchat.qpic.cn/gchatpic_new/473893141/2171986905-3016544360-EFA0C041E2496809C8369DCACE68A1E1/0?term=2&is_origin=1
+[highlight.min.js]: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js
+[github.min.css]: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css
+[katex.min.css]: https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
+[tex-mml-chtml.js]: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+[Github-highlight.min.js]: https://github.com/highlightjs/highlight.js
+[Github-katex.min.css]: https://github.com/linxiaowu66/marked-kaTex
+[Github-tex-mml-chtml.js]: https://github.com/mathjax/MathJax

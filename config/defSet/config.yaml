@@ -13,3 +13,9 @@ deviceScaleFactor: 3
 # networkidle0: 500ms内没有网络连接
 # networkidle2: 500ms内网络连接数小于2
 waitUntil: networkidle2
+
+# markedKatex配置 详情查看https://katex.org/docs/options.html
+markedKatex:
+  # 输出格式 html | mathml | htmlAndMathml
+  output: htmlAndMathml
+  throwOnError: false

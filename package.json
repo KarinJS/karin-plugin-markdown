@@ -4,9 +4,11 @@
   "author": "Lain",
   "type": "module",
   "dependencies": {
-    "marked": "12.0.2",
     "highlight.js": "11.9.0",
-    "github-markdown-css": "5.5.1"
+    "github-markdown-css": "5.5.1",
+    "marked": "12.0.2",
+    "marked-katex-extension": "5.0.1",
+    "marked-alert": "2.0.1"
   },
   "imports": {
     "#Karin": "./lib/imports/index.js",

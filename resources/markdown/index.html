@@ -3,14 +3,16 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{@githubMarkdown}}">
-  <link rel="stylesheet" href="{{@githubMin}}">
-  <script src="{{@highlightMin}}"></script>
+  <link rel="stylesheet" href="{{githubMarkdown}}">
+  <link rel="stylesheet" href="{{githubMin}}">
+  <link rel="stylesheet" href="{{katexMin}}" crossorigin="anonymous">
+  <script src="{{highlightMin}}"></script>
+  <script async src="{{texMmlChtml}}"></script>
   <style>
     .markdown-body {
       box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
+      min-width: "{{minWidth}}";
+      max-width: "{{maxWidth}}";
       margin: 0 auto;
       padding: 45px;
     }
