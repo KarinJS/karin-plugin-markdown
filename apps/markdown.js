@@ -9,9 +9,9 @@ export class Markdown extends plugin {
         {
           reg: '^(#)?(markdown|md)',
           fnc: 'start',
-          permission: Config.Config.permission
-        }
-      ]
+          permission: Config.Config.permission,
+        },
+      ],
     })
   }
 
