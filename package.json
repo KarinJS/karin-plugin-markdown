@@ -1,6 +1,6 @@
 {
   "name": "@karinjs/plugin-markdown",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "markdown plugin for karin",
   "homepage": "https://github.com/KarinJS/karin-plugin-markdown",
   "bugs": {
