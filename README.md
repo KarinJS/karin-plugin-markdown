@@ -9,7 +9,7 @@
 karin 根目录执行以下命令克隆仓库到本地
 
 ```bash
-pnpm add @karinjs/plugin-markdown
+pnpm add @karinjs/plugin-markdown -w
 ```
 
 ## 安装依赖
