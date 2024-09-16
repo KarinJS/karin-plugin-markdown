@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noImplicitAny": true,
+    "outDir": "./lib",
+    "paths": {
+      "karin/*": [
+        "src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "sourceMap": false,
+    "strict": true,
+    "target": "ESNext",
+    "types": [
+      "@types/node"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "tsc-alias": {
+    "resolveFullExtension": ".js",
+    "resolveFullPaths": true
+  }
+}

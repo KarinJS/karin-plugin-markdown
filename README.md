@@ -9,7 +9,7 @@
 karin 根目录执行以下命令克隆仓库到本地
 
 ```bash
-git clone https://github.com/karinjs/karin-plugin-markdown.git ./plugins/karin-plugin-markdown
+pnpm add @karinjs/plugin-markdown
 ```
 
 ## 安装依赖
@@ -21,6 +21,8 @@ pnpm install --filter=karin-plugin-markdown
 ## 指令
 
 `#md + markdown内容`
+
+`#md + 任何文件`
 
 举例：
 
