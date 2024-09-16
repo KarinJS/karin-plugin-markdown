@@ -4,18 +4,39 @@
 
 ---
 
-## 克隆仓库
+## 安装插件
 
-karin 根目录执行以下命令克隆仓库到本地
+karin 根目录执行以下命令即可开箱使用
 
 ```bash
 pnpm add @karinjs/plugin-markdown -w
 ```
 
-## 安装依赖
+## 有一些基础配置
 
-```bash
-pnpm install --filter=karin-plugin-markdown
+> 你可以在`karin/config/plugin/@karinjs/plugin-markdown/config.yaml`中配置
+
+```yaml
+# 权限配置 "master" | "admin" | "group.owner" | "group.admin" | "all"
+permission: master
+
+# 像素比 越高越清晰 但是会减缓渲染速度
+deviceScaleFactor: 3
+
+# 页面加载状态 'load'|'domcontentloaded'|'networkidle0'|'networkidle2'
+# load: 页面完全加载
+# domcontentloaded: DOMContentLoaded 事件触发 如果纯静态可以使用
+# networkidle0: 500ms内没有网络连接
+# networkidle2: 500ms内网络连接数小于2
+waitUntil: networkidle2
+
+# markedKatex配置 详情查看https://katex.org/docs/options.html
+markedKatex:
+  # 输出格式 html | mathml | htmlAndMathml
+  output: htmlAndMathml
+  throwOnError: false
+
+
 ```
 
 ## 指令
