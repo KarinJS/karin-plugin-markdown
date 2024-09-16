@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/KarinJS/karin-plugin-markdown/compare/v1.0.1...v1.0.2) (2024-09-16)
+
+
+### Bug Fixes
+
+* 日... ([ea3997b](https://github.com/KarinJS/karin-plugin-markdown/commit/ea3997b0269944126ab2d6f9cfbab813828da216))
+
 ## [1.0.1](https://github.com/KarinJS/karin-plugin-markdown/compare/v1.0.0...v1.0.1) (2024-09-16)
 
 
