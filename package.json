@@ -18,7 +18,7 @@
   "files": [
     "/lib/**/*.js",
     "/lib/**/*.d.ts",
-    "/config/*.yaml",
+    "/config/**/*",
     "resources/**/*",
     "LICENSE",
     "package.json",
