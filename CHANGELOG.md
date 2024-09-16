@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/KarinJS/karin-plugin-markdown/compare/v1.0.0...v1.0.1) (2024-09-16)
+
+
+### Bug Fixes
+
+* config.yaml ([df83b0f](https://github.com/KarinJS/karin-plugin-markdown/commit/df83b0f37570d136c6b49c1f3e0333f532af225e))
+
 ## 1.0.0 (2024-09-16)
 
 
